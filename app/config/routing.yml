@@ -2,3 +2,7 @@ corley_base:
     resource: "@CorleyBaseBundle/Resources/config/routing.yml"
     prefix:   /
 
+CorleyBaseBundle_book:
+    resource: "@CorleyBaseBundle/Resources/config/routing/book.yml"
+    prefix:   /book
+
