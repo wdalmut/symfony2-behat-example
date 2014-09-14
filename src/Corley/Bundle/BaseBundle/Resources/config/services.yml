@@ -1,0 +1,7 @@
+parameters:
+#    corley_base.example.class: Corley\Bundle\BaseBundle\Example
+
+services:
+#    corley_base.example:
+#        class: %corley_base.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,15 @@
+default:
+    suites:
+        default:
+            path: %paths.base%/features
+            contexts:
+                - Behat\MinkExtension\Context\MinkContext
+                - HelloFeatureContext:
+                    entityManager: '@doctrine.orm.entity_manager'
+    extensions:
+        Behat\Symfony2Extension: ~
+        Behat\MinkExtension:
+            base_url: http://localhost:8000
+            sessions:
+                default:
+                    symfony2: ~

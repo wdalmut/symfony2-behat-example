@@ -1,0 +1,4 @@
+corley_base:
+    resource: "@CorleyBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
