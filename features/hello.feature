@@ -14,3 +14,15 @@ Feature: An hello world feature example
             | "/hello/marco"    | "Hello Marco"    |
             | "/hello/giovanni" | "Hello Giovanni" |
             | "/hello/martina"  | "Hello Martina"  |
+
+    Scenario Outline: Say a better hello to special guests
+        When I am on <page>
+        Then I should see <hello>
+
+        Examples:
+            | page              | hello                   |
+            | "/hello/fabien"   | "Captain on the bridge" |
+            | "/hello/walter"   | "Hello Walter"          |
+            | "/hello/marco"    | "Hello Marco"           |
+            | "/hello/giovanni" | "Hello Giovanni"        |
+            | "/hello/martina"  | "Hello Martina"         |
