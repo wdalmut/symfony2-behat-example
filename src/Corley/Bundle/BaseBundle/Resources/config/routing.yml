@@ -1,3 +1,7 @@
 corley_base_homepage:
     path:     /hello/{name}
     defaults: { _controller: CorleyBaseBundle:Default:index }
+
+corley_base_signup:
+    path:     /
+    defaults: { _controller: CorleyBaseBundle:Default:signup }
